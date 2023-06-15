@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
   color: rgb(38, 38, 38);
   font-weight: 200;
+  font-size: 25px;
 }
 body {
   margin: 0;
@@ -289,4 +290,41 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.pulse {
+  transform-origin: center;
+  animation: pulse 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes pules {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hidden-box a,
+.hidden-box p {
+  font-size: 18px;
+}
+
+.hidden-box a {
+  color: rgb(254, 67, 67);
+}
+.hidden-pill a {
+  margin: 0 150px 0 0;
+}
+iframe {
+  width: 100%;
+  min-height: 300px;
+}
+
+.hidden-box ~ .box-container {
+  overflow: hidden;
 }
