@@ -1,4 +1,4 @@
-const body = document.querySelector(".body");
+const body = document.querySelector("body");
 const allPills = document.querySelectorAll(".pill");
 const allBoxes = document.querySelectorAll(".box");
 const allArrows = document.querySelectorAll(".arrow");
@@ -62,7 +62,7 @@ const addTheme = (
 
   xLetter.style.stroke =
     lineColor || colorPalettes[palatteIndex][xLetterIndex].altStroke;
-  // body.style.backgroundColor = bodyBackgroundColor;
+  body.style.backgroundColor = bodyBackgroundColor;
 
   xLetterSVG.style.fill =
     svgFill || colorPalettes[palatteIndex][xLetterIndex].fill;
